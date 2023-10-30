@@ -1,3 +1,9 @@
 import { io } from "socket.io-client";
 
-export const socket = io("http://localhost:4000");
+const isProduction = process.env.NODE_ENV === "production";
+
+export const socket = io(
+  isProduction
+    ? "https://whiteboard-server-7vme.onrender.com"
+    : "http://localhost:4000"
+);
