@@ -1,0 +1,56 @@
+.menuContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+}
+
+.toolContainer {
+  display: flex;
+  column-gap: 3rem;
+  padding: 4px 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.tool {
+  background-color: gainsboro;
+  padding: 6px;
+}
+
+.tool:hover {
+  background-color: grey;
+}
+.toolActive {
+  background-color: grey;
+}
+
+.colorContainer {
+  display: flex;
+  column-gap: 3rem;
+  padding: 4px 16px;
+}
+
+.colorTile {
+  height: 16px;
+  width: 16px;
+  border: solid black 1px;
+  margin: 2px;
+  padding: 2px;
+}
+
+.colorTile:hover {
+  border: solid wheat 3px;
+  margin: 0px;
+}
+
+.activeTile {
+  border: solid wheat 3px;
+  margin: 0px;
+}
+
+.sizeSlider {
+}
